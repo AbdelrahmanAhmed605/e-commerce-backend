@@ -48,9 +48,9 @@ GET requests:
 http://localhost:3001/api/categories/ to view all categories in the database <br/>
 http://localhost:3001/api/categories/:id to view the category with the selected id in the database <br/>
 http://localhost:3001/api/products/ to view all products in the database <br/>
-http://localhost:3001/api/products/:id to view all product with the selected id in the database <br/>
+http://localhost:3001/api/products/:id to view the product with the selected id in the database <br/>
 http://localhost:3001/api/tags/ to view all tags in the database <br/>
-http://localhost:3001/api/tags/:id to view all tag with the selected id in the database <br/>
+http://localhost:3001/api/tags/:id to view the tag with the selected id in the database <br/>
 
 
 Note: replace :id with the id of the selected data entry (ex. http://localhost:3001/api/categories/6 to view the category with an id of 6) 
