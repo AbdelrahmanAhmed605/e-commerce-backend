@@ -55,9 +55,10 @@ router.post("/", async (req, res) => {
       const productTagData = await ProductTag.bulkCreate(productTagIdArr);
       // send both tagData and productTagData in a single JSON object
       res.status(200).json({ tagData, productTagData });
+    } else {
+      // if there are no associated products for the new tag, just respond with tagData
+      res.status(200).json(tagData);
     }
-    // if there are no associated products for the new tag, just respond with tagData
-    res.status(200).json(tagData);
   } catch (err) {
     res.status(400).json(err);
   }
